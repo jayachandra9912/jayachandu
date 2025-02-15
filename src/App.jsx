@@ -7,18 +7,19 @@ import 'slick-carousel/slick/slick-theme.css';
 import './App.css';
 
 const images = [
-  `${process.env.PUBLIC_URL}/images/1.jpg`,
-  `${process.env.PUBLIC_URL}/images/2.jpg`,
-  `${process.env.PUBLIC_URL}/images/3.jpg`,
-  `${process.env.PUBLIC_URL}/images/4.png`,
-  `${process.env.PUBLIC_URL}/images/5.jpg`,
-  `${process.env.PUBLIC_URL}/images/6.png`,
-  `${process.env.PUBLIC_URL}/images/7.jpg`,
-  `${process.env.PUBLIC_URL}/images/8.jpg`,
-  `${process.env.PUBLIC_URL}/images/9.jpg`,
-  `${process.env.PUBLIC_URL}/images/10.jpg`,
-  `${process.env.PUBLIC_URL}/images/12.jpg`,
+  `${import.meta.env.BASE_URL}images/1.jpg`,
+  `${import.meta.env.BASE_URL}images/2.jpg`,
+  `${import.meta.env.BASE_URL}images/3.jpg`,
+  `${import.meta.env.BASE_URL}images/4.png`,
+  `${import.meta.env.BASE_URL}images/5.jpg`,
+  `${import.meta.env.BASE_URL}images/6.png`,
+  `${import.meta.env.BASE_URL}images/7.jpg`,
+  `${import.meta.env.BASE_URL}images/8.jpg`,
+  `${import.meta.env.BASE_URL}images/9.jpg`,
+  `${import.meta.env.BASE_URL}images/10.jpg`,
+  `${import.meta.env.BASE_URL}images/12.jpg`,
 ];
+
 
 const App = () => {
   const sliderSettings = {
