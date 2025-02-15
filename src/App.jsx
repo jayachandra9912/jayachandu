@@ -6,19 +6,17 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const images = [
-  '/images/1.jpg',
-  '/images/2.jpg',
-  '/images/3.jpg',
-  '/images/4.png',
-  '/images/5.jpg',
-  '/images/6.png',
-  '/images/7.jpg',
-  '/images/8.jpg',
-  '/images/9.jpg',
-  '/images/10.jpg',
-  // '/images/11.jpg',
-  '/images/12.jpg',
-  
+  `${process.env.PUBLIC_URL}/images/1.jpg`,
+  `${process.env.PUBLIC_URL}/images/2.jpg`,
+  `${process.env.PUBLIC_URL}/images/3.jpg`,
+  `${process.env.PUBLIC_URL}/images/4.png`,
+  `${process.env.PUBLIC_URL}/images/5.jpg`,
+  `${process.env.PUBLIC_URL}/images/6.png`,
+  `${process.env.PUBLIC_URL}/images/7.jpg`,
+  `${process.env.PUBLIC_URL}/images/8.jpg`,
+  `${process.env.PUBLIC_URL}/images/9.jpg`,
+  `${process.env.PUBLIC_URL}/images/10.jpg`,
+  `${process.env.PUBLIC_URL}/images/12.jpg`,
 ];
 
 const App = () => {
