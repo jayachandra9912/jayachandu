@@ -1,9 +1,10 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import './App.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import './App.css';
 
 const images = [
   `${process.env.PUBLIC_URL}/images/1.jpg`,
@@ -32,9 +33,7 @@ const App = () => {
   };
 
   return (
-    <>
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-600 text-white relative overflow-hidden">
-      {/* Background Animation */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <motion.div
@@ -103,12 +102,14 @@ const App = () => {
         </div>
         <h1 className='mt-8'>Made in 💗 with Chandana</h1>
       </motion.div>
-      
     </div>
-    
-    </>
-    
   );
 };
 
-export default App;
+const WrappedApp = () => (
+  <BrowserRouter basename="/jayachandu">
+    <App />
+  </BrowserRouter>
+);
+
+export default WrappedApp;
