@@ -34,7 +34,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center p-20  justify-center bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-600 text-white relative overflow-hidden">
+    <div className="min-h-screen flex items-center p-16  justify-center bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-600 text-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <motion.div
